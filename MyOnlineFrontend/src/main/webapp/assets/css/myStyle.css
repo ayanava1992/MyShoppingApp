@@ -14,7 +14,8 @@ body {
 }
 
 .slide-image {
-    width: 100%;
+    width: 10px;
+    height: 10px
 }
 
 .carousel-holder {
@@ -85,8 +86,8 @@ footer {
 
 .dataTableImg {
 	
-	width:100px;
-	height: 100px;
+	width:5px;
+	height: 5px;
 	
 }
 
@@ -243,8 +244,8 @@ input:checked + .slider:before {
 
 .adminDataTableImg
 {
-	height:50px;
-	width:50px;
+	height:2px;
+	width:2px;
 }
 
 

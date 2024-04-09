@@ -16,13 +16,13 @@
 	<div class="collapse navbar-collapse justify-content-between"
 		id="navbarCollapse">
 		<div class="navbar-nav mr-auto py-0">
-			<a href="${contextroot}/home" class="nav-item nav-link active ">Home</a> <a
-				href="${contextroot}/product/show/all/active/products" class="nav-item nav-link">Product</a> <a
-				href=# class="nav-item nav-link">Manage Product</a>
+			<a href="${contextroot}/home" class="nav-item nav-link active ">HOME</a> <a
+				href="${contextroot}/product/show/all/active/products" class="nav-item nav-link">GROCERY LIST</a> <a
+				href="${contextroot}/manage/show" class="nav-item nav-link">HANDLE GROCERY</a>
 		</div>
 		<ul class="nav navbar-nav navbar-right">
-			<li class="nav-item" id="register"><a class="nav-link" href="#">Register </a></li>
-			<li class="nav-item" id="login"><a class="nav-link" href="#">Login</a></li>
+			<li class="nav-item" id="register"><a class="nav-link" href="${contextroot}/register">REGISTER</a></li>
+			<li class="nav-item" id="login"><a class="nav-link" href="#">LOGIN</a></li>
 
 		</ul>
 	</div>

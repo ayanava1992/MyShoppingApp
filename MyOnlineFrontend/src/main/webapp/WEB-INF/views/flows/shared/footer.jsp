@@ -1,4 +1,7 @@
-<div class="container-fluid bg-warning text-danger mt-5 pt-5">
+</div>
+	<!-- FOOTER -->
+
+	<div class="container-fluid bg-warning text-danger mt-5 pt-5">
         <div class="row px-xl-5 pt-5">
             <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
                 <a href="" class="text-decoration-none">
@@ -30,3 +33,18 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+	<!-- jQuery Plugins -->
+	<script src="${js}/jquery.min.js"></script>
+	<script src="${js}/bootstrap.min.js"></script>
+	<script src="${js}/jquery.dataTables.js"></script>
+	<script src="${js}/dataTables.bootstrap.js"></script>
+	<script src="${js}/bootbox.min.js"></script>
+	<script src="${js}/jquery.zoom.min.js"></script>
+	<script src="${js}/main.js"></script>
+	<script src="${js}/amscript.js"></script>
+
+</body>
+
+</html>

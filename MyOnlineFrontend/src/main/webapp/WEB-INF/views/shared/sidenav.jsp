@@ -1,8 +1,8 @@
 <div class="col-md-3">
 	<a
 		class="d-flex align-items-center justify-content-between bg-success"
-		style="height: 65px; margin: 1px; padding: 30px;">
-		<h5 class="m-0">Categories</h5>
+		style="height: 65px; margin: 2px; padding: 30px;">
+		<h5 class="m-0">CATEGORIES</h5>
 	</a>
 
 	<nav
@@ -11,7 +11,7 @@
 	<div class="navbar-nav w-100 overflow-hidden" style="height: 410px">
 		<div class="nav-link" data-toggle="dropdown px-1">
 			<c:forEach items="${categorylist}" var="category">
-				<a href="" class="nav-item nav-link">${category.categoryName}</a>
+				<a href="${contextroot}/product/show/all/active/category/${category.id}/products" class="nav-item nav-link">${category.categoryName}</a>
 			</c:forEach>
 		</div>
 	</div>

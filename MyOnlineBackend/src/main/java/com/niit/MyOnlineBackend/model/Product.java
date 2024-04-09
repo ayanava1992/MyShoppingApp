@@ -8,6 +8,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Min;
+
+import org.hibernate.validator.constraints.NotBlank;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table(name="My_Shopping_Product")
@@ -21,27 +26,35 @@ public class Product
 	@Column(name="Product_Code")
 	private String code;
 	
+	@NotBlank(message="PRODUCT NAME CANNOT BE EMPTY")
 	@Column(name="Product_Name")
 	private String name;
 	
+	@NotBlank(message="BRAND NAME CANNOT BE EMPTY")
 	@Column(name="Product_Brand")
 	private String brand;
 	
+	@NotBlank(message="DESCRIPTION CANNOT BE EMPTY")
 	@Column(name="Product_Description")
 	private String description;
 	
+	@Min(value=1, message="PRICE CANNOT BE LESS THAN 1")
 	@Column(name="Product_Unit_Price")
 	private double unit_price;
 	
+	@Min(value=1, message="Quantity CANNOT BE LESS THAN 1")
 	@Column(name="Product_Quantity")
 	private int quantity;
+	
 	
 	@Column(name="Is_Active")
 	private boolean active;
 	
+	@JsonIgnore
 	@Column(name="Product_Category_Id")
 	private int category_id;
 	
+	@JsonIgnore
 	@Column(name="Product_Supplier_Id")
 	private int supplier_id;
 	

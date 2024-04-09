@@ -3,6 +3,7 @@
 
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="sf"%>
 
 <c:set var="contextroot" value="${pageContext.request.contextPath }"/>
 
@@ -37,41 +38,36 @@
 
 <!-- header -->
 
-	<%@include file="./shared/header.jsp"%>
+	<div class="container-fluid">
+	<div class="row bg-transparent py-2 px-xl-5">
+		<div class="col-lg-6 d-none d-lg-block text-dark">
+			<div>
+				<span>WELCOME TO ON-CART!!!!!</span>
+				<div class="d-inline-flex align-items-center">
+					<div>
+							</span> <a class="text-danger" href="">HELP</a><span
+							class="text-muted px-2">|</span> <a class="text-danger" href="">SUPPORT</a>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- NAVIGATION -->
 
-	<%@include file="./shared/nav.jsp"%>
+	<nav class="navbar navbar-expand-lg navbar-secondary bg-info">
+	<div class="row align-items-center py-3 px-xl-5">
+		<div class="col-lg-3 d-none d-lg-block">
+			<a href="${flowExecutionUrl}&_event_id_home" class="text-decoration-none">
+				<h2>
+					<span class="text-primary font-weight-bold border px-3 mr-1">On</span>Cart
+				</h2>
+			</a>
+		</div>
+	</div>
+</nav>
 
-	<!-- HOME -->
-	<br/>
-	<c:if test="${userclickhome== true}">
-	<%@include file="home.jsp"%>
-	</c:if>
-	<c:if test="${userclickallproducts== true || userclickcategoryproducts== true}">
-	<%@include file="productlist.jsp"%>
-	</c:if>
-	<c:if test="${userclicksingleproduct== true}">
-	<%@include file="singleproduct.jsp"%>
-	</c:if>
-	<c:if test="${userclickmanageproduct== true}">
-	<%@include file="manageproduct.jsp"%>
-	</c:if>
-	<!-- FOOTER -->
-
-	<%@include file="./shared/footer.jsp"%>
-
-
-	<!-- jQuery Plugins -->
-	<script src="${js}/jquery.min.js"></script>
-	<script src="${js}/bootstrap.min.js"></script>
-	<script src="${js}/jquery.dataTables.js"></script>
-	<script src="${js}/dataTables.bootstrap.js"></script>
-	<script src="${js}/bootbox.min.js"></script>
-	<script src="${js}/jquery.zoom.min.js"></script>
-	<script src="${js}/main.js"></script>
-	<script src="${js}/amscript.js"></script>
-
-</body>
-
-</html>
+<br/>
+<div class="container">
